@@ -6,25 +6,14 @@ menuListArray =["Pizza Vegetariana",//adicionar mais itens
                 "pizza extravaganza" 
                 ];
 
-menuListArray.sort();
-
 function getMenu(){
 var htmldata="";
 menuListArray.sort();
 for(var i=0; i<menuListArray.length;i++){
-    htmldata=htmldata+[i] + '<br>'
+    htmldata=htmldata+ menuListArray[i] + '<br>';
 }  
     document.getElementById("displayMenu").innerHTML = htmldata;//Completar o código
 }
-
-var item=document.getElementById("additem").value;
- menuListArray.push(item);
-
-var imgTags='id=i"img1" src="images/pizzaimg.png"/>'
-
-htmldata=htmldata+imgTags+ menuListArray[i]+'<br>';
-
-document.getElementById("displayMenu").innerHTML = htmldata
 
 function addItem(){
 var htmldata;
